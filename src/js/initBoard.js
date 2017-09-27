@@ -12,12 +12,10 @@ function initBoard () {
                 y % 2 === 0 ? 
                 space.classList.add('white-space') :
                 space.classList.add('black-space');
-                
             } else {
                 y % 2 === 0 ?
                 space.classList.add('black-space') :
                 space.classList.add('white-space');
-                
             }
             row.appendChild(space);
         }
