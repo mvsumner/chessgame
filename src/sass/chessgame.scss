@@ -18,8 +18,27 @@ body {
 .chess-game {
     position: relative;
     max-width: 400px;
-   width: 100%;
+    width: 100%;
     border: 1px solid red;
+    #chess-board {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        border: 1px solid red;
+        .row {
+            flex: 1;
+            display: flex;
+            border: 1px solid blue;
+        }
+        .white-space {
+            flex: 1;
+            background: #fff;  
+        }
+        .black-space {
+            flex: 1;
+            background: #000;  
+        }
+    }
 }
 
 .chess-footer {
